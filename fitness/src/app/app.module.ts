@@ -6,7 +6,10 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { TrainingComponent } from './training/training.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-
+import {
+  AppRoutingModule
+} from './app-routing.module';
+import { fromEventPattern } from 'rxjs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +19,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     WelcomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
